@@ -1,0 +1,17 @@
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my_sql_learning #ここは任意の名前に変えてください
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password 
+      MYSQL_DATABASE: mydatabase
+    volumes: #コンテナ内にファイルを同期します
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./csv:/var/lib/mysql-files:z
+      - ./sql:/sql
+    ports:
+      - "3306:3306"

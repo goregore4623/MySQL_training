@@ -69,6 +69,10 @@
 
 ## Docker関連コマンド
 
+- **実行中のコンテナ一覧表示**
+    ```sh
+    docker ps
+    ```
 - **コンテナの起動**
     ```sh
     docker compose up -d
@@ -76,6 +80,22 @@
 - **コンテナの停止**
     ```sh
     docker compose down
+    ```
+- **コンテナ内でコマンド実行**
+    ```sh
+    docker exec -it <コンテナ名> <コマンド>
+    ```
+- **コンテナのログ確認**
+    ```sh
+    docker logs <コンテナ名 or プロセスID>
+    ```
+- **コンテナのログをリアルタイムで確認**
+    ```sh
+    docker logs -f <コンテナ名 or プロセスID>
+    ```
+- **全てのコンテナ一覧表示（停止中も含む）**
+    ```sh
+    docker ps -a
     ```
 - **再起動**
     ```sh
@@ -89,6 +109,22 @@
 - **コンテナの削除**
     ```sh
     docker rm <コンテナ名 or プロセスID>
+    ```
+- **イメージ一覧表示**
+    ```sh
+    docker images
+    ```
+- **イメージの削除**
+    ```sh
+    docker rmi <イメージ名 or イメージID>
+    ```
+- **コンテナのリソース使用状況確認**
+    ```sh
+    docker stats
+    ```
+- **Dockerシステムのクリーンアップ**
+    ```sh
+    docker system prune
     ```
 
 ---

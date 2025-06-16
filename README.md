@@ -42,6 +42,14 @@
     ```sql
     SHOW DATABASES;
     ```
+- データベースの作成
+    ```sql
+    CREATE DATABASE <データベース名>;
+    ```
+- データベースの選択
+    ```sql
+    USE <データベース名>;
+    ```
 - テーブル一覧の表示
     ```sql
     SHOW TABLES;
@@ -52,6 +60,30 @@
     -- または
     SHOW COLUMNS FROM <テーブル名>;
     ```
+- テーブルの作成
+    ```sql
+    CREATE TABLE <テーブル名> (
+        カラム名1 データ型1,
+        カラム名2 データ型2,
+        ...
+    );
+    ```
+- データの挿入
+    ```sql
+    INSERT INTO <テーブル名> (カラム1, カラム2) VALUES (値1, 値2);
+    ```
+- データの更新
+    ```sql
+    UPDATE <テーブル名> SET カラム名 = 新しい値 WHERE 条件;
+    ```
+- データの削除
+    ```sql
+    DELETE FROM <テーブル名> WHERE 条件;
+    ```
+- データの検索
+    ```sql
+    SELECT * FROM <テーブル名> WHERE 条件;
+    ```
 - データ件数の確認
     ```sql
     SELECT COUNT(*) FROM <テーブル名>;
@@ -60,9 +92,57 @@
     ```sql
     SELECT * FROM <テーブル名> LIMIT 10;
     ```
+- データの並び替え
+    ```sql
+    SELECT * FROM <テーブル名> ORDER BY カラム名 ASC;  -- 昇順
+    SELECT * FROM <テーブル名> ORDER BY カラム名 DESC; -- 降順
+    ```
+- 重複を除外して表示
+    ```sql
+    SELECT DISTINCT カラム名 FROM <テーブル名>;
+    ```
+- テーブルの結合
+    ```sql
+    SELECT * FROM テーブル1 
+    INNER JOIN テーブル2 ON テーブル1.カラム = テーブル2.カラム;
+    ```
+- グループ化と集計
+    ```sql
+    SELECT カラム名, COUNT(*) 
+    FROM <テーブル名> 
+    GROUP BY カラム名;
+    ```
+- インデックスの作成
+    ```sql
+    CREATE INDEX インデックス名 ON <テーブル名>(カラム名);
+    ```
 - ユーザー一覧の表示
     ```sql
     SELECT user, host FROM mysql.user;
+    ```
+- 現在のデータベースを確認
+    ```sql
+    SELECT DATABASE();
+    ```
+- 現在のMySQLバージョンを確認
+    ```sql
+    SELECT VERSION();
+    ```
+- テーブルの最適化
+    ```sql
+    OPTIMIZE TABLE <テーブル名>;
+    ```
+- トランザクションの開始
+    ```sql
+    START TRANSACTION;
+    ```
+- トランザクションの確定
+    ```sql
+    COMMIT;
+    ```
+- トランザクションの取り消し
+    ```sql
+    ROLLBACK;
     ```
 
 ---

@@ -10,6 +10,6 @@ WHERE department = 'Sales' AND salary >= 6000;
 
 -- SELECT * FROM employees;
 
--- -- 削除
--- DROP TABLE employees;
--- DROP DATABASE company;
+-- 削除
+DROP TABLE employees;
+DROP DATABASE company;

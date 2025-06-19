@@ -36,4 +36,5 @@ SELECT e.name, e.department, d.location
 FROM employees e
 JOIN departments d ON e.department = d.name;
 
-
+DROP TABLE employees;
+DROP DATABASE company;

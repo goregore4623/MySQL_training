@@ -3,6 +3,23 @@
 このリポジトリは、MySQLの学習環境をDockerで簡単に構築するためのものです。
 
 ---
+## フォルダ構成
+``` bash
+.
+├── Dockerfile
+├── README.md
+├── compose.yaml
+├── csv
+│   ├── comments.csv
+│   ├── posts.csv
+│   └── users.csv
+└── sql
+    ├── ex~
+    ├── init.sql
+    ├── load_data.sql
+    └── test.sql
+```
+
 ## 事前準備
 - [Docker](https://www.docker.com/ja-jp/)のインストール
 - このレポジトリをclone

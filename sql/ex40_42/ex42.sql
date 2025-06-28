@@ -1,0 +1,2 @@
+-- ex42
+-- `employees`テーブルの`department`カラムに`idx_department`という名前のインデックスを作成してください。

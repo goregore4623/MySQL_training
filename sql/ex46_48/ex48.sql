@@ -1,0 +1,2 @@
+-- ex48
+-- `new_user`から`company`データベースの`SELECT`権限を剥奪してください。

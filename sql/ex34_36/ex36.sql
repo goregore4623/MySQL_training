@@ -1,0 +1,2 @@
+-- ex36
+-- `products`テーブルの`name`に`UNIQUE`制約を追加し、`release_date`に`DEFAULT`で現在の日付が設定されるようにしてください。

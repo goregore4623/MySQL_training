@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 22-25)
+# MySQL Practice Exercises: Advanced Filtering (Exercise 22-25)
 
 ## 初期設定
 

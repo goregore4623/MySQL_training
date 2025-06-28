@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 13-15)
+# MySQL Practice Exercises: Subqueries and Joins (Exercise 13-15)
 
 ## 初期設定
 

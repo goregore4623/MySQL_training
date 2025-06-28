@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 16-18)
+# MySQL Practice Exercises: Outer Joins and NULL (Exercise 16-18)
 
 ## 初期設定
 

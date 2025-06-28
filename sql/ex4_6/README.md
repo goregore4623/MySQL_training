@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 4-6)
+# MySQL Practice Exercises: Data Manipulation (Exercise 4-6)
 
 ## 初期設定
 
@@ -112,5 +112,3 @@ WHERE department = 'Sales' AND salary >= 6000;
 ```
 
 ---
-
-（このファイルはMarkdown形式です）

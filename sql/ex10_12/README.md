@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 10-12)
+# MySQL Practice Exercises: Aggregate Functions (Exercise 10-12)
 
 ## 初期設定
 

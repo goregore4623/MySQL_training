@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 7-9)
+# MySQL Practice Exercises: Sorting and Limiting (Exercise 7-9)
 
 ## 初期設定
 
@@ -116,5 +116,3 @@ SELECT name AS 従業員名, salary AS 給与 FROM employees;
 ```
 
 ---
-
-（このファイルはMarkdown形式です）

@@ -1,4 +1,4 @@
-# MySQL Practice Exercises (Exercise 19-21)
+# MySQL Practice Exercises: Data Manipulation and Sorting (Exercise 19-21)
 
 ## 初期設定
 

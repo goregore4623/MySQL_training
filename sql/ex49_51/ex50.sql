@@ -1,0 +1,2 @@
+-- ex50
+-- `employees`テーブルの`salary_rank`（Exercise 49で定義）ごとに、従業員の人数をカウントしてください。

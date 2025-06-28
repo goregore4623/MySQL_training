@@ -119,3 +119,59 @@ GROUP BY department;
 ```
 
 ---
+
+## Exercise 12a: 集計関数（MIN, MAX）
+
+### 説明
+
+* `MIN`: 最小値を求める
+* `MAX`: 最大値を求める
+
+### 文法
+
+```sql
+SELECT MIN(カラム名) FROM テーブル名;
+
+SELECT MAX(カラム名) FROM テーブル名;
+```
+
+### 例題
+
+`employees`テーブルの給与の最小値と最大値を取得してください。
+
+#### 解答例
+
+```sql
+SELECT MIN(salary) AS 最小給与, MAX(salary) AS 最大給与 FROM employees;
+```
+
+---
+
+## Exercise 12b: グループ化した結果のフィルタリング（HAVING）
+
+### 説明
+
+`HAVING`句は、`GROUP BY`でグループ化した結果に対して条件を指定するために使用します。`WHERE`句はグループ化する前のデータに対して条件を指定するのに対し、`HAVING`句はグループ化した後の結果に対して条件を指定します。
+
+### 文法
+
+```sql
+SELECT カラム名, 集計関数 FROM テーブル名
+GROUP BY カラム名
+HAVING 条件;
+```
+
+### 例題
+
+`employees`テーブルで部署ごとの平均給与を計算し、平均給与が5600以上の部署のみを表示してください。
+
+#### 解答例
+
+```sql
+SELECT department, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) >= 5600;
+```
+
+---
